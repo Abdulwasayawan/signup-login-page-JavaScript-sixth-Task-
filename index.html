@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connection OF HTML to Js</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="LOGIN-SIGNUP-CONTAINER">
+      <!-- login strat -->
+      <div class="login" id="login">
+        <h1>Welcome Back!</h1>
+        <h4>Login in to access your account. </h4>
+        <h4 id="loginemailpassmatch">
+
+        </h4>
+        <form class="login-form">
+            <div class="field">
+              <input type="text" placeholder="Enter Email" id="loginEmail" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Enter Your Password" id="loginPassword" required>
+            </div>
+            <a href="#" class="login-btn" onclick="login()">Login</a>
+        </form>
+        <div class="login-here">
+          <h5>Not a member?</h5>
+          <a href="#signup">Signup Here</a>
+        </div>
+        <div class="logindetails" id="logindetails">
+
+        </div>
+      </div>
+      <!-- login End -->
+       <!-- Signup Start -->
+       <div class="login" id="signup">
+        <h1>Join us today!</h1>
+        <h4>Sign up now to become a member. </h4>
+        <h4 id="correctPassAlert"></h4>
+        <h4 id="signupsucessfully"></h4>
+        <h4 id="repeatEmail"></h4>
+        <form class="login-form">
+            <div class="field">
+              <input type="text" placeholder="Enter Name" id="name" required >
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Enter Email" id="email" required>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="User Name" id="userName" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Enter Passowrd" id="Passowrd" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm Passowrd" id="Confirmpassword" required>
+            </div>
+            <a href="#" class="login-btn" onclick="Signup()">Signup</a>
+        </form>
+        <div class="login-here">
+          <h5>Already a member?</h5>
+          <a href="#login">Login Here</a>
+        </div>
+      </div>
+       <!-- Signup End -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
